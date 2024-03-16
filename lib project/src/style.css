@@ -11,18 +11,27 @@ body {
 }
 
 .Home {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
 .nav_Bar {
-    width: 100%;
+    width: 90%;
+   
     padding: 14px;
+    position: fixed;
+        top: 0;
+        right: 5%;
+        background-color: rgba(255, 255, 255, 0.8);
+        /* Semi-transparent background */
+        z-index: 1000;
+    /* Ensure navbar stays on top */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: auto;
 }
 
 .sinha-libraries {
@@ -130,7 +139,7 @@ body {
 
 .home_Body {
 
-    width: 100%;
+    width: 90%;
     height: 87vh;
     margin: auto;
     display: flex;
