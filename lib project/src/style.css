@@ -373,8 +373,11 @@ body {
 }
 
 .option_box .benefit-card img {
+    
     width: 79.08px;
     height: 67px;
+    width: 20%;
+    height: 35%;
     object-fit: cover;
 }
 
@@ -403,6 +406,11 @@ body {
 }
 
 @media screen and (max-width: 1019px) {
+    .home_Body {
+
+            height: 160vw;
+           
+        }
     .home_Text h4 {
 
         font-size: 14px;
