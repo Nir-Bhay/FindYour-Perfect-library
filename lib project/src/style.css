@@ -19,14 +19,14 @@ body {
 
 .nav_Bar {
     width: 90%;
-   
+
     padding: 14px;
     position: fixed;
-        top: 0;
-        right: 5%;
-        background-color: rgba(255, 255, 255, 0.8);
-        /* Semi-transparent background */
-        z-index: 1000;
+    top: 0;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent background */
+    z-index: 1000;
     /* Ensure navbar stays on top */
     display: flex;
     align-items: center;
@@ -170,18 +170,20 @@ body {
         /* Start opacity */
     }
 
-50% {
+    50% {
         transform: translateX(0);
         /* End position */
         opacity: 1;
         /* End opacity */
     }
-        100% {
-            /* Start position */
-            opacity: 1;
-            /* Start opacity */
-        }
+
+    100% {
+        /* Start position */
+        opacity: 1;
+        /* Start opacity */
+    }
 }
+
 .home_Text {
     display: flex;
     flex-direction: column;
@@ -364,10 +366,12 @@ body {
     transition: transform 0.3s ease;
 
 }
+
 .option_box:hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease;
 }
+
 .option_box .benefit-card {
     width: 90%;
     height: 80%;
@@ -380,7 +384,7 @@ body {
 }
 
 .option_box .benefit-card img {
-    
+
     width: 79.08px;
     height: 67px;
     width: 20%;
@@ -424,11 +428,19 @@ body {
 }
 
 @media screen and (max-width: 1019px) {
+    .nav_Bar {
+
+
+
+        right: 5%;
+    }
+
     .home_Body {
 
-            height: 160vw;
-           
-        }
+        height: 160vw;
+
+    }
+
     .home_Text h4 {
 
         font-size: 14px;
@@ -462,6 +474,10 @@ body {
         font-size: 1rem;
     }
 
+    .Services {
+        height: 250vh;
+    }
+
     .Services_head h4 {
 
         font-size: 12px;
@@ -473,4 +489,160 @@ body {
         font-size: 18px;
 
     }
+
+    .Services_options {
+        height: auto;
+    }
+}
+
+
+.study-spaces {
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 220vh;
+    justify-content: space-between;
+
+
+    /* padding: 76px 0; */
+}
+
+/* Desktop styles */
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.about:hover {
+    transform: translateY(-5px);
+}
+
+.about .study-content {
+    margin: auto;
+    width: 64%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about .study-content h3 {
+    color: #ff0000;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.about .study-content h2 {
+    width: 80%;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.about .study-content p {
+    color: #5a5a5a;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.about .study-content button {
+    width: 200px;
+    height: 50px;
+    background: #ffcf3a;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about .study-content button:hover {
+    background-color: #ffdb7b;
+}
+
+.about img {
+    margin: auto;
+    width: 30%;
+    height: 90%;
+    border-radius: 30px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.about:hover img {
+    transform: scale(1.05);
+}
+
+/* Mobile styles */
+@media (max-width: 1019px) {
+    .study-spaces {
+
+        height: auto;
+    }
+
+
+    .about .study-content {
+        margin: auto;
+        width: 54%;
+
+
+    }
+
+    .about img {
+        margin: auto;
+        width: 40%;
+
+    }
+
+    .about .study-content h3 {
+        color: #ff0000;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .about .study-content h2 {
+        width: 100%;
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    .about .study-content p {
+        color: #5a5a5a;
+        font-size: 10px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+        .about .study-content button {
+            width: 120px;
+            height: 30px;
+            background: #ffcf3a;
+            border-radius: 25px;
+            padding: 7px 15px;
+            font-size: 10px;
+            font-weight: 500;
+            
+        }
 }
