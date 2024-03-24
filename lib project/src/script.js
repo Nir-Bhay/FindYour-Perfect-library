@@ -26,3 +26,4 @@ window.addEventListener('scroll', addVisibleClass);
 
 // Call the function initially to check elements on page load
 addVisibleClass();
+

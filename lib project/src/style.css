@@ -8,6 +8,7 @@ body {
     width: 100vw;
     height: 1000vh;
     font-family: "Outfit-SemiBold", sans-serif;
+
 }
 
 .Home {
@@ -16,6 +17,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .nav-bar {
     width: 100%;
     padding: 14px;
@@ -23,7 +25,7 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(255, 255, 255, 0.9);
-    z-index: 1000;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +34,7 @@ body {
 }
 
 .nav-bar:hover {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(255, 255, 255);
 }
 
 .sinha-libraries {
@@ -145,6 +147,7 @@ body {
         padding-left: 0;
     }
 }
+
 .home_Body {
 
     width: 90%;
@@ -417,12 +420,14 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+
 }
 
 .option_box {
     margin: auto;
     background: rgba(255, 255, 255, 0.31);
     width: 392px;
+
     height: 258px;
     flex-shrink: 0;
     border-radius: 23px;
@@ -432,7 +437,8 @@ body {
     transition: transform 0.3s ease;
 
 }
-.optionbox{
+
+.optionbox {
     display: none;
 }
 
@@ -589,59 +595,83 @@ body {
 
 /* make responsive for mobile */
 
-@media (max-width: 414px) {
+@media (max-width: 514px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .Home {
+        width: 100%;
+
+    }
+
+    .nav-bar {
+        width: 100%;
+        justify-content: space-between;
 
 
-.nav-bar{
-    width: 100%;
-    justify-content: space-between;
 
 
+    }
 
-}
-.sinha-libraries {
-    width: 50%;
-    display: flex;
+    .sinha-libraries {
+        width: 50%;
+        display: flex;
         flex-direction: row;
         gap: 7px;
         align-items: center;
-        justify-content: flex-start
-}
-.bookshelf-1 {
-    width: 30px;
-    height:30px;
-    object-fit: cover;
-}
-.sinha-libraries h3 {
-    font-size: 14px;
-    font-weight: 600;
+        justify-content: flex-start;
+    }
 
-}
-.sign-up{
-    width: 40%;
-    
-}
-.sign-up a{
+    .bookshelf-1 {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+
+    .sinha-libraries h3 {
+        font-size: 14px;
+        font-weight: 600;
+
+    }
+
+    .sign-up {
+        width: 35%;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .sign-up a {
 
         text-align: center;
         font-size: 15px;
         font-weight: 500;
-       
-}
-.sign-up button{
-    background: #1063ff;
+
+    }
+
+    .sign-up button {
+        background: #1063ff;
         border-radius: 30px;
         width: 95px;
         height: 32px;
         color: #ffffff;
-            text-align: center;
-          
-            font-size: 15px;
-            font-weight: 500;
+        text-align: center;
 
-}
+        font-size: 15px;
+        font-weight: 500;
+
+    }
+
     .home_Body {
         width: 100%;
+        margin: auto;
+        /* background-color: rebeccapurple; */
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 14px;
+        padding-bottom: 0;
+
     }
 
     .nav-bar {
@@ -649,10 +679,7 @@ body {
 
     }
 
-    .home_Body {
-        flex-direction: column-reverse;
-        height: auto;
-    }
+
 
     .homeBody_image {
         aspect-ratio: 1.25;
@@ -667,9 +694,11 @@ body {
         object-fit: cover;
         object-position: center;
     }
-.homeee{
-    display: none;
-}
+
+    .homeee {
+        display: none;
+    }
+
     .home-color {
         display: block;
         background: linear-gradient(to left,
@@ -761,110 +790,171 @@ body {
         height: 6.13%;
     }
 
-.home_Count {
-    height: 60px;
-    
-}
+    .home_Count {
+        padding: 14px;
+        height: 50px;
 
-.home_Count .Count {
-    font-size: 12px;
+    }
+
+    .home_Count .Count {
+        font-size: 12px;
         font-weight: 400;
-}
+    }
 
-.Services {
-    width: 100%;
-    display: flex;
+    .Services {
+        background: rgba(255, 255, 255, 0);
+        display: flex;
         flex-direction: column;
         gap: 35px;
         align-items: center;
         justify-content: flex-start;
-}
-.Services_head {
-  margin-top: 5%;
-       width: 100%;
-        height: 93px;
-        position: static;
-     
-}
-.Services_head h4 {
-    font-size: 14px;
-        font-weight: 600;
-}
-
-.Services_head h1 {
-    margin-top: 3%;
-    font-size: 18px;
-        font-weight: 600;
-        
-}
-
-.Services_options {
-  display: flex;
-flex-direction: column;
-width: 100%;
-align-items: center;
-justify-content: center;
-gap: 7%;
-height: auto;
-
-}
-.option_box{
-display: none;
-display: block;
-}
-.optionbox{
-    display: none;
-    /* flex-wrap: wrap; */
-    gap: 12px;
-    width: 90%;
-    height: auto;
-    margin: auto;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-
-
-
-}
-.nhbox{
-    display: block;
-    width: 190.22px;
-    height: auto;
-    flex-wrap: wrap;
-        height: 177px;
-        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1),
-                0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-                background-color: rebeccapurple;
-
-}
-/* .benefit-card{
-   width: 100%;
-   height: 100%;
-   border-radius: 8px;
-   background-color: #d71c1c;
-   overflow: hidden;
-   transition: all .3s ease-in-out;
-}
-.benefit-card img{
-width: 47.96px;
-    height: 50px;
-    object-fit: cover;
-}
-
-.benefit-card h3{
-
-    font-size: 10px;
-    font-weight: 400;
-    width: 150.6px;
-}
-.benefit-card p{
+        padding: 20px;
+    }
+        .Services_head h4 {
+            color: #f9671e;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
     
-        font-size: 7px;
+        .Services_head h1 {
+            width: 100%;
+        font-size: 20px;
+        }
+
+    .Services_options {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    .option_box {
+        display: none;
+    }
+
+    .optionbox {
+        display: block;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+
+    }
+
+    .nhbox {
+        display: block;
+        margin: 10px;
+        background: rgba(255, 255, 255, 0.31);
+        width: 190.22px;
+        height: 177px;
+        flex-shrink: 0;
+        border-radius: 23px;
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1),
+            0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: row;
+        transition: transform 0.3s ease;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: transform 1s ease-in-out;
+    }
+
+    .optionbox .benefit-card {
+        width: 100%;
+        height: 100%;
+        margin: auto auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .optionbox .benefit-card img {
+        width: 47.96px;
+        height: 50px;
+        object-fit: cover;
+    }
+
+    .optionbox .benefit-card h3 {
+        color: #000000;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 400;
+        width: 150.6px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+    .optionbox .benefit-card p {
+        color: #6e6e6e;
+        text-align: left;
+        font-family: "HammersmithOne-Regular", sans-serif;
+        font-size: 10px;
         font-weight: 400;
         width: 158.28px;
-        line-height: 16px;
-       
-} */
+        height: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+    .nhbox:hover {
+        position: absolute;
+        z-index: 100;
+    width: 392px;
+        height: 258px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: hidden;
+        background-color: white;
+        font-size: 1.2em;
+        transform: scale(0.9);
+            transition: transform 0.3s ease-in-out;
+    }
+           .nhbox:hover .benefit-card {
+            width: 100% !important;
+            font-size: 30px;
+           
+           }
+                   .nhbox:hover .benefit-card img {
+                    width: 29%;
+                        height: 45%;
+                        object-fit: cover;
+        
+                   }
+                   .nhbox:hover .benefit-card h3 {
+                    width: 90%;
+                    color: #000000;
+                        text-align: left;
+                        font-size: 26px;
+                        font-weight: 400;
+                   }
+                   .nhbox:hover .benefit-card p{
+                    width: 90%;
+                        color: #6e6e6e;
+                            text-align: left;
+                            font-family: "HammersmithOne-Regular", sans-serif;
+                            font-size: 16px;
+                            font-weight: 400;
+                   }
+.box003{
+    display: flex;
+    justify-content: center;
+}
+
 }
 
 
