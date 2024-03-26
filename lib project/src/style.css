@@ -6,7 +6,7 @@
 body {
     overflow-x: hidden;
     width: 100vw;
-    height: 1000vh;
+    height: auto;
     font-family: "Outfit-SemiBold", sans-serif;
 
 }
@@ -810,16 +810,17 @@ body {
         justify-content: flex-start;
         padding: 20px;
     }
-        .Services_head h4 {
-            color: #f9671e;
-            font-size: 14px;
-            margin-bottom: 6px;
-        }
-    
-        .Services_head h1 {
-            width: 100%;
+
+    .Services_head h4 {
+        color: #f9671e;
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .Services_head h1 {
+        width: 100%;
         font-size: 20px;
-        }
+    }
 
     .Services_options {
         width: 100%;
@@ -911,49 +912,13 @@ body {
 
     }
 
-    .nhbox:hover {
-        position: absolute;
-        z-index: 100;
-    width: 392px;
-        height: 258px;
-        flex-direction: column;
-        flex-wrap: wrap;
-        overflow: hidden;
-        background-color: white;
-        font-size: 1.2em;
-        transform: scale(0.9);
-            transition: transform 0.3s ease-in-out;
+    .box003 {
+        display: flex;
+        justify-content: center;
     }
-           .nhbox:hover .benefit-card {
-            width: 100% !important;
-            font-size: 30px;
-           
-           }
-                   .nhbox:hover .benefit-card img {
-                    width: 29%;
-                        height: 45%;
-                        object-fit: cover;
-        
-                   }
-                   .nhbox:hover .benefit-card h3 {
-                    width: 90%;
-                    color: #000000;
-                        text-align: left;
-                        font-size: 26px;
-                        font-weight: 400;
-                   }
-                   .nhbox:hover .benefit-card p{
-                    width: 90%;
-                        color: #6e6e6e;
-                            text-align: left;
-                            font-family: "HammersmithOne-Regular", sans-serif;
-                            font-size: 16px;
-                            font-weight: 400;
-                   }
-.box003{
-    display: flex;
-    justify-content: center;
-}
+
+
+
 
 }
 
@@ -1136,6 +1101,11 @@ body {
     margin-top: 17px;
 
 }
+
+.contact-us {
+    display: none;
+}
+
 
 .about_us.contact-us-section .contact-us-heading {
     color: #050505;
@@ -1322,6 +1292,11 @@ body {
     }
 }
 
+.map{
+    display: none;
+}
+
+
 .header-container {
     margin-top: 50px;
     display: flex;
@@ -1437,6 +1412,11 @@ body {
     border: 0;
 }
 
+
+.subscribe-section {
+    display: none;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -1525,4 +1505,257 @@ body {
 .footer-link:hover {
     color: #1063ff;
     /* Change color on hover */
+}
+
+@media (max-width: 514px) {
+    .study-spaces {
+        width: 100% !important;
+        padding: 10px;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+
+    }
+
+    .about {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .about .study-content {
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        color: #000;
+        font-weight: 400;
+
+
+        width: 100%;
+
+    }
+
+    .about img {
+        margin: auto;
+        width: 100%;
+        /* height: 90%; */
+        aspect-ratio: 1.72;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+    }
+
+    .about .study-content h3 {
+        color: #f00;
+        margin-top: 25px;
+        width: 100%;
+        font: 400 16px Outfit, sans-serif;
+    }
+
+    .about .study-content h2 {
+        font: 500 24px Outfit, sans-serif;
+        margin-top: 21px;
+    }
+
+
+
+    .about .study-content p {
+        color: #5a5a5a;
+        font-family: Outfit, sans-serif;
+        margin-top: 13px;
+    }
+
+    .about .study-content button {
+        justify-content: center;
+        border-radius: 40px;
+        background-color: #ffcf3a;
+        align-self: start;
+        margin-top: 23px;
+        text-align: center;
+        padding: 8px 16px;
+        font: 500 14px Outfit, sans-serif;
+    }
+
+    .study_space02 {
+        flex-direction: column-reverse;
+    }
+
+    .about_us.contact-us-section {
+        display: none;
+    }
+
+    .contact-us {
+        display: block;
+        overflow: hidden;
+    }
+
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        padding: 48px 22px 18px;
+        margin-top: 4px;
+        width: 100%;
+    }
+
+    .contact-us-title {
+        color: #6fb14f;
+        font: 500 28px Outfit, sans-serif;
+        text-align: center;
+    }
+
+    .contact-us-description {
+        color: #5a5a5a;
+        font: 400 14px Outfit, sans-serif;
+        text-align: center;
+        margin-top: 26px;
+    }
+
+    .contact-us-images {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        height: 279px;
+        gap: 14px;
+        width: 100%;
+    }
+
+    .contact-info-card {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .contact-info-text {
+        margin-top: 10px;
+    }
+
+    .contact-info-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .contact-info-card:hover::before {
+        opacity: 1;
+    }
+
+    .contact-info-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .contact-info-card:hover .contact-info-text {
+        color: #ff4d00;
+    }
+
+    .contact-us-image {
+        width: 140px;
+        max-width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .contact-info-card img {
+        aspect-ratio: 1;
+        object-fit: cover;
+        object-position: center;
+        width: 140px;
+        max-width: 100%;
+    }
+
+    /* .footer1 .nav-links {
+    display:flex;
+    flex-direction: column;
+
+} */
+
+
+.map {
+    display: block;
+    width: 100%;
+}
+.map img {
+   padding: 0 20px;
+        width: 100%;
+        /* height: 90%; */
+        aspect-ratio: 1.72;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+}
+
+
+
+
+
+.footer1{
+    overflow: hidden;
+}
+    .header-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: start;
+    }
+
+    .logo-column {
+        width: 100%;
+    }
+
+    .logo-wrapper {
+        align-self: start;
+        display: flex;
+        margin-left: 18px;
+        flex-direction: column;
+        font-size: 18px;
+        color: #7a7a7a;
+        font-family: Outfit, sans-serif;
+        align-items: start;
+    }
+
+    .library-name {
+        color: #000;
+        text-align: center;
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .newsletter-form input {
+        width: 135% !important;
+    }
+
+    .newsletter-form button {
+        margin-top: 20px;
+        width: 150% !important;
+    }
 }
